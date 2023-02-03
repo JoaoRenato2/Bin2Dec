@@ -5,8 +5,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bin2Dec</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="binary_to_decimal">
+    <div class="container">
+      <h2>Binary to Decimal Converter</h2>
+      <div class="form-row">
+        <form>
+          <div class="field">
+            <label>
+              <input onkeyup="Bin2Dec()" type="text" name="bin" id="input" autocomplete="off" placeholder="Binary No.">
+              <p>Binary</p>
+            </label>
+          </div>
+          <div class="field">
+            <label>
+              <input type="text" name="dec" id="output" readonly="true" placeholder="Decimal No. will appear here">
+              <p>Decimal</p>
+            </label>
+          </div>
+        </form>
+        <div id="error-msg">
+          <p>You should enter a binary number composed by 0 and 1!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
   
 </body>
 </html>
